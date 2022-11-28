@@ -1,0 +1,153 @@
+body {
+  font-family: "Inter", sans-serif;
+  margin: 40px 80px;
+}
+* {
+  box-sizing: border-box;
+}
+p {
+  color: hsl(236, 13%, 42%);
+  font-size: 15px;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+nav ul {
+  list-style-type: none;
+}
+nav li {
+  display: inline-block;
+  margin-left: 30px;
+  transition: 0.3s all;
+}
+nav li:hover {
+  cursor: pointer;
+  color: hsl(5, 85%, 63%);
+}
+main article:first-of-type {
+  width: 70%;
+  float: left;
+}
+
+main article:first-of-type img {
+  width: 100%;
+  height: 250px;
+}
+figure {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 25px;
+}
+figcaption {
+  display: flex;
+}
+figcaption h1 {
+  flex: 0 0 50%;
+  font-size: 60px;
+  margin-top: 16px;
+}
+figcaption button {
+  padding: 15px 55px;
+  color: white;
+  background-color: hsl(5, 85%, 63%);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: none;
+  transition: 0.2s;
+  margin-top: 85px;
+}
+figcaption button:hover {
+  background-color: hsl(240, 100%, 5%);
+  cursor: pointer;
+}
+aside {
+  background-color: hsl(240, 100%, 5%);
+  overflow: hidden;
+  padding: 15px;
+}
+aside h1 {
+  color: hsl(5, 85%, 63%);
+  font-size: 35px;
+  margin-top: 10px;
+}
+aside h3 {
+  color: #fff;
+  transition: 0.2s;
+}
+aside h3:hover,
+.trending-txt h4:hover {
+  cursor: pointer;
+  color: hsl(5, 85%, 63%);
+}
+.new-info {
+  padding-bottom: 12px;
+  border-bottom: hsl(236, 13%, 42%) 1px solid;
+}
+.new-info:last-of-type {
+  border-bottom: 0;
+}
+#trendings {
+  clear: both;
+  display: flex;
+}
+.trending {
+  display: flex;
+}
+.trending .trending-img {
+  width: 30%;
+}
+.trending-img img {
+  width: 100%;
+}
+.trending-txt {
+  padding-left: 20px;
+}
+.trending-txt h3 {
+  font-size: 30px;
+  color: hsl(233, 8%, 79%);
+  margin: 0;
+}
+.trending-txt h4 {
+  margin: 10px;
+  margin-left: 0;
+  font-weight: 800;
+}
+footer {
+  padding: 50px 0 0;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+@media screen and (max-width: 412px) {
+  body {
+    margin: 20px;
+  }
+  .menu-responsive {
+    width: 70%;
+    height: 100vh;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+
+    flex-direction: column;
+  }
+
+  .menu-responsive li {
+    float: left;
+    margin: 0 2px;
+  }
+  .menu {
+    display: none;
+  }
+  .icon-menu {
+    display: block;
+    width: 50px;
+    height: 20px;
+    margin-top: 10px;
+  }
+}
